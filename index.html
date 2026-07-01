@@ -2,144 +2,158 @@
 
 <html lang="es">
 
-
 <head>
 
-  <meta charset="UTF-8" />
+<meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>A.N Ride</title>
+<title>A.N Ride</title>
 
-  <style>
+<style>
 
-    body {
+body{margin:0;font-family:Arial,sans-serif;background:#07111f;color:white}
 
-      margin: 0;
+.hero{padding:40px 20px;text-align:center;background:linear-gradient(#0b1b33,#05080f)}
 
-      font-family: Arial, sans-serif;
+.logo{font-size:42px;font-weight:bold;color:#3b82f6}
 
-      background: #050b18;
+.slogan{font-size:20px;margin:10px 0}
 
-      color: white;
+.btn{display:block;background:#2563eb;color:white;text-decoration:none;padding:15px;margin:12px auto;border-radius:12px;max-width:320px;font-weight:bold}
 
-      text-align: center;
+.section{padding:25px 20px;text-align:center}
 
-    }
+.card{background:#111c2f;margin:15px auto;padding:18px;border-radius:16px;max-width:420px}
 
-    .container {
+input,select,textarea{width:90%;padding:13px;margin:8px;border-radius:10px;border:none}
 
-      padding: 40px 20px;
+button{background:#2563eb;color:white;border:none;padding:15px;border-radius:12px;font-weight:bold;width:90%;max-width:320px}
 
-    }
-
-    h1 {
-
-      font-size: 42px;
-
-      color: #2f80ff;
-
-    
-
-    p {
-
-      font-size: 18px;
-
-    }
-
-    .btn {
-
-      display: block;
-
-      margin: 15px auto;
-
-      padding: 15px;
-
-      width: 85%;
-
-      max-width: 350px;
-
-      background: #2f80ff;
-
-      color: white;
-
-      text-decoration: none;
-
-      border-radius: 12px;
-
-      font-size: 18px;
-
-      font-weight: bold;
-
-    }
-
-    .card {
-
-      background: #101a2e;
-
-      margin: 20px auto;
-
-      padding: 20px;
-
-      border-radius: 15px;
-
-      max-width: 400px;
-
-    }
-
-  </style>
+</style>
 
 </head>
 
 <body>
 
-  <div class="container">
+<div class="hero">
 
-    <h1>A.N Ride</h1>
+<div class="logo">🚙 A.N Ride</div>
 
-    <p><strong>Tu viaje privado por Texas</strong></p>
+<div class="slogan">Tu viaje privado por Texas</div>
 
-    <p>Transporte privado por reservación entre Austin, Houston, Dallas y San Antonio.</p>
+<p>Transporte privado por reservación entre Austin, Houston, Dallas y San Antonio.</p>
 
-    <a class="btn" href="https://wa.me/15127494195?text=Hola,%20quiero%20reservar%20un%20viaje%20con%20A.N%20Ride.">
+<a class="btn" href="#reserva">🚗 Reservar ahora</a>
 
-🚗 Reservar un viaje
+<a class="btn" href="https://wa.me/15127494195">💬 WhatsApp</a>
 
-</a>
+<a class="btn" href="tel:+15127494195">📞 Llamar ahora</a>
 
-    <a class="btn" href="#tarifas">💰 Ver tarifas</a>
-<a class="btn" href="https://wa.me/15127494195?text=Hola,%20quiero%20reservar%20un%20viaje%20con%20A.N%20Ride.">
-    
-    <a class="button" href="tel:+15127494195">
-      <a class="btn" href="tel:+15127494195">
+</div>
 
-📞 Llamar ahora
-</a>
-    
-    <div class="card" id="tarifas">
+<div class="section">
 
-      <h2>Tarifas iniciales</h2>
+<h2>¿Por qué elegir A.N Ride?</h2>
 
-      <p>Austin → Houston: $200</p>
+<div class="card">✅ Servicio privado por reservación</div>
 
-      <p>Austin → Dallas: $200</p>
+<div class="card">✅ Puntualidad y atención personalizada</div>
 
-      <p>Austin → San Antonio: $100</p>
+<div class="card">✅ Mitsubishi Outlander cómodo y limpio</div>
 
-    </div>
+<div class="card">✅ Pago en efectivo o tarjeta</div>
 
-    <div class="card">
+</div>
 
-      <h2>Contacto</h2>
+<div class="section">
 
-      <p>📞 512-749-4195</p>
+<h2>Tarifas iniciales</h2>
 
-      <p>📍 Austin, Texas</p>
+<div class="card">Austin → Houston: $200</div>
 
-    </div>
+<div class="card">Austin → Dallas: $200</div>
 
-  </div>
+<div class="card">Austin → San Antonio: $100</div>
+
+</div>
+
+<div class="section" id="reserva">
+
+<h2>Solicita tu viaje</h2>
+
+<input id="nombre" placeholder="Nombre completo">
+
+<input id="telefono" placeholder="Teléfono">
+
+<input id="origen" placeholder="Ciudad de salida">
+
+<input id="destino" placeholder="Destino">
+
+<input id="fecha" type="date">
+
+<input id="hora" type="time">
+
+<select id="pasajeros">
+
+<option>1 pasajero</option>
+
+<option>2 pasajeros</option>
+
+<option>3 pasajeros</option>
+
+<option>4 pasajeros</option>
+
+<option>5 pasajeros</option>
+
+</select>
+
+<textarea id="comentarios" placeholder="Comentarios"></textarea>
+
+<button onclick="enviarReserva()">📲 Enviar por WhatsApp</button>
+
+</div>
+
+<div class="section">
+
+<h2>Contacto</h2>
+
+<p>📞 512-749-4195</p>
+
+<p>📍 Austin, Texas</p>
+
+</div>
+
+<script>
+
+function enviarReserva(){
+
+let mensaje =
+
+"Hola, quiero reservar un viaje con A.N Ride.%0A%0A" +
+
+"Nombre: " + document.getElementById("nombre").value + "%0A" +
+
+"Teléfono: " + document.getElementById("telefono").value + "%0A" +
+
+"Origen: " + document.getElementById("origen").value + "%0A" +
+
+"Destino: " + document.getElementById("destino").value + "%0A" +
+
+"Fecha: " + document.getElementById("fecha").value + "%0A" +
+
+"Hora: " + document.getElementById("hora").value + "%0A" +
+
+"Pasajeros: " + document.getElementById("pasajeros").value + "%0A" +
+
+"Comentarios: " + document.getElementById("comentarios").value;
+
+window.open("https://wa.me/15127494195?text=" + mensaje, "_blank");
+
+}
+
+</script>
 
 </body>
 
-</html>
+</html
